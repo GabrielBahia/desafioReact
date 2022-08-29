@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import estilos from './NavBar.module.css';
+
 
 export default function NavBar() {
   const rotas = [{
@@ -12,7 +14,7 @@ export default function NavBar() {
     to: '/adm'
   }];
   return (
-    <nav >
+    <nav className={estilos.navbar}>
       <ul >
         {rotas.map((rota, index) => (
           <li key={index} >
