@@ -1,8 +1,8 @@
-.BannerArea {
+.bannerArea {
     display: flex;
     justify-content: center;
     background-color: #a650df;
-    margin-top: -1.5rem;
+    box-shadow: 20px 20px 50px grey;
 }
 
 .banner {

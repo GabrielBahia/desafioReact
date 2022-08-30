@@ -1,12 +1,15 @@
 import estilos from './Home.module.css';
 import Banner from '../../components/Banner';
+import SecaoInfo from '../../components/SecaoInfo';
+import SecaoContato from '../../components/SecaoContato';
 
 
 const Home = () => {
     return (
-    <div>
-        <h1 className={estilos.home} > Home </h1>
-         <Banner />
+    <div className={estilos.home}>
+        <Banner />  
+        <SecaoInfo /> 
+        <SecaoContato /> 
     </div>
     )
 }
