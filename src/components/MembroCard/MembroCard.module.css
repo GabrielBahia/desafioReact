@@ -1,0 +1,27 @@
+.areaCard {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 6px solid black;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.titleCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: black;
+    background-color: #FFCE07;
+    height: 40px;
+}
+    
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #3B1B4D;
+    color: white;
+}

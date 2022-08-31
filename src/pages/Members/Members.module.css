@@ -1,0 +1,25 @@
+.members {
+    margin-bottom: 5rem;
+    font-family: 'Varela Round', sans-serif;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.areaMembers {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    display: grid;
+    justify-items: center;
+	grid-template-columns: repeat(4, 1fr);
+    box-shadow: 20px 20px 50px grey;
+    padding: 30px;
+}

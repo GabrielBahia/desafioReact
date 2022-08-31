@@ -10,8 +10,8 @@ export default function NavBar() {
     label: 'Membros',
     to: '/membros'
   }, {
-    label: 'Adm',
-    to: '/adm'
+    label: 'Login',
+    to: '/login'
   }];
   return (
     <nav className={estilos.navbar}>

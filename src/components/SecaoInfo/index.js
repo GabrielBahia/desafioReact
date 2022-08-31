@@ -17,21 +17,24 @@ export default function SecaoInfo() {
                         soluções sejam entregues com muita eficiência e qualidade,
                         simplesmente por acreditar que a satisfação de nossos clientes precisa ser completa.</h3>
                 </div>
+                <div className={estilos.text1}>
+                        <h3>* Atualmente estamos entre as melhores empresas juniores de TI da zona da mata, sendo essa conquista de muito orgulho entre os membros da empresa, o que é reflexo do comprometimento de todos e da clareza dos nossos objetivos.</h3>
+                </div>
             </div>
 
             <div>
                 <div className={estilos.container2}>
                     <div className={estilos.text1}>
-                        <h1 className={estilos.title1} >Code Jr.</h1>
-                        <h3>* Atualmente estamos entre as melhores empresas juniores de TI da zona da mata, sendo essa conquista de muito orgulho entre os membros da empresa, o que é reflexo do comprometimento de todos e da clareza dos nossos objetivos.</h3>
-                    </div>
-                    <div className={estilos.text1}>
-                        <h1 className={estilos.title1} >Code Jr.</h1>
-                        <h3>* Atualmente estamos entre as melhores empresas juniores de TI da zona da mata, sendo essa conquista de muito orgulho entre os membros da empresa, o que é reflexo do comprometimento de todos e da clareza dos nossos objetivos.</h3>
+                        <h1 className={estilos.title1} >Missão</h1>
+                        <h3>Transformar pessoas e empresas por meio da tecnologia, formando líderes e desenvolvendo o país.</h3>
                     </div>  
                     <div className={estilos.text1}>
-                        <h1 className={estilos.title1} >Code Jr.</h1>
-                        <h3>* Atualmente estamos entre as melhores empresas juniores de TI da zona da mata, sendo essa conquista de muito orgulho entre os membros da empresa, o que é reflexo do comprometimento de todos e da clareza dos nossos objetivos.</h3>
+                        <h1 className={estilos.title1} >Visão</h1>
+                        <h3>Ser referência no Brasil por meio de produtos escaláveis de impacto nacional.</h3>
+                    </div>
+                    <div className={estilos.text1}>
+                        <h1 className={estilos.title1} >Valores.</h1>
+                        <h3>Crescer juntos, orgulho de ser Code, desenvolvedora de talentos, empatia.</h3>
                     </div>
                 </div>
             </div>
