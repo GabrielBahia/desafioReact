@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Members from './pages/Members';
 import Administracao from './pages/Adm/Administracao';
 import FormCadastro from './pages/Adm/FormCadastro';
+import VerMembro from './pages/Adm/VerMembro';
 import Login from './pages/Login';
 
 
@@ -20,7 +21,7 @@ export default function AppRouter() {
                 <Route path='/login' element={<Login/>} />
                 <Route path='/adm' element={<Administracao />} />
                 <Route path='/adm/criar' element={<FormCadastro/>} />
-                <Route path='/adm/ver/:id' element={<FormCadastro/>} />
+                <Route path='/adm/ver/:id' element={<VerMembro/>} />
                 <Route path='/adm/criar/:id' element={<FormCadastro/>} />
             </Routes>
          {<Footer />}
