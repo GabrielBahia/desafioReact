@@ -2,6 +2,7 @@ import estilos from './FormMembro.module.css';
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import axios from 'axios';
+import { Link as RouterLink } from 'react-router-dom'
 
 
 export default function FormMembro() {
@@ -41,6 +42,7 @@ export default function FormMembro() {
             })
                 .then(() => {
                     alert("Membro atualizado com sucesso!")
+                    
                 })
         }
         else {
@@ -63,57 +65,49 @@ export default function FormMembro() {
         <section className={estilos.formArea}>
             <div className={estilos.container}>
                 <form className={estilos.form} onSubmit={aoSubmeterForm} method="get" id="form">
-                    <div>
-                        <label className={estilos.label2} for="name">Nome:</label>
-                        <input value={name}
-                                onChange={evento => setName(evento.target.value)} 
-                                className={estilos.input2} 
-                                required type="name" 
-                        />
-                    </div>
-                    <div>
-                        <label className={estilos.label1} for="email">Email:</label>
-                        <input value={email}
-                                onChange={evento => setEmail(evento.target.value)}  
-                                className={estilos.input1} 
-                                required type="email" 
-                        />
-                    </div>
-                    <div>
-                        <label className={estilos.label1} for="aniversario">Aniversario:</label>
-                        <input value={aniversario}
-                                onChange={evento => setAniversario(evento.target.value)}  
-                                className={estilos.input1} 
-                                required type="date" 
-                        />
-                    </div>
-                    <div>
-                        <label className={estilos.label1} for="departamentos">Departamentos:</label>
-                        <select value={departamentos}
-                                onChange={evento => setDepartamentos(evento.target.value)}  
-                                required id="departamentos">
-                            <option for="cargo" id="projetos" name="projetos" value="projetos">projetos</option>
-                            <option for="cargo" id="vpgg" name="vpgg" value="vpgg">vpgg</option>
-                            <option for="cargo" id="marketing" name="marketing" value="marketing">marketing</option>
-                            <option for="cargo" id="presidencia" name="presidencia" value="presidencia">presidencia</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="cargo">Cargo:</label>
-                        <select value={cargo}
-                                onChange={evento => setCargo(evento.target.value)}  
-                                required id="cargo">
-                            <option for="cargo" id="assessor" name="assessor" value="assessor">assessor</option>
-                            <option for="cargo" id="gerente" name="gerente" value="gerente">gerente</option>
-                            <option for="cargo" id="diretor" name="diretor" value="diretor">diretor</option>
-                        </select>
-                    </div>
 
+                    <label className={estilos.label1} for="name">Nome:</label>
+                    <input value={name}
+                            onChange={evento => setName(evento.target.value)} 
+                            className={estilos.input1} 
+                            required type="name" 
+                    />
 
-                    <div>
-                        <button className={estilos.btn1} type="submit" form="form">Cadastrar</button>
+                    <label className={estilos.label1} for="email">Email:</label>
+                    <input value={email}
+                            onChange={evento => setEmail(evento.target.value)}  
+                            className={estilos.input1} 
+                            required type="email" 
+                    />
+                
+                    <label className={estilos.label1} for="aniversario">Aniversario:</label>
+                    <input value={aniversario}
+                            onChange={evento => setAniversario(evento.target.value)}  
+                            className={estilos.input1} 
+                            required type="date" 
+                    />
+                
+                    <label className={estilos.label1} for="departamentos">Departamentos:</label>
+                    <input value={departamentos}
+                            onChange={evento => setDepartamentos(evento.target.value)}  
+                            className={estilos.input1} 
+                            required type="text" 
+                    />
+                
+                    <label for="cargo">Cargo:</label>
+                    <select value={cargo}
+                            onChange={evento => setCargo(evento.target.value)}  
+                            required id="cargo">
+                        <option for="cargo" id="assessor" name="assessor" value="assessor">assessor</option>
+                        <option for="cargo" id="gerente" name="gerente" value="gerente">gerente</option>
+                        <option for="cargo" id="diretor" name="diretor" value="diretor">diretor</option>
+                    </select>
+                
+                    <div className={estilos.btnStyle}>
+                        <button className={estilos.btn1} type="submit" form="form">Cadastrar</button>   
                     </div>
                 </form>
+                <button className={estilos.btn1}><RouterLink to={'/adm'}>Voltar</RouterLink></button>
             </div>
         </section>
     );

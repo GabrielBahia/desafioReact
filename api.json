@@ -1,26 +1,6 @@
 {
   "members": [
     {
-      "id": 1,
-      "name": "Ana Beatriz Lana",
-      "email": "ana.armond@codejr.com.br",
-      "aniversario": "06/10",
-      "departamentos": [
-        "marketing"
-      ],
-      "cargo": "assessor"
-    },
-    {
-      "id": 2,
-      "name": "Arthur Bonaldi",
-      "email": "arthur.bonaldi@codejr.com.br",
-      "aniversario": "12/12",
-      "departamentos": [
-        "presidencia"
-      ],
-      "cargo": "diretor"
-    },
-    {
       "id": 3,
       "name": "Bernardo Dantas Ortiz",
       "email": "bernardo.ortiz@codejr.com.br",
@@ -314,12 +294,20 @@
       "cargo": "assessor"
     },
     {
-      "name": "testeeeee",
-      "email": "teste@2",
-      "aniversario": "2022-08-25",
+      "name": "teste",
+      "email": "te@a",
+      "aniversario": "2022-09-14",
       "departamentos": "vpgg",
       "cargo": "gerente",
       "id": 32
+    },
+    {
+      "name": "testee",
+      "email": "testee2@2",
+      "aniversario": "2022-09-08",
+      "departamentos": "projetos vpgg",
+      "cargo": "gerente",
+      "id": 33
     }
   ]
 }

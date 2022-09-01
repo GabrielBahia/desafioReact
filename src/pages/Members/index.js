@@ -26,7 +26,7 @@ const Members = () => {
         <div className={estilos.members}>
             <Banner />
             <div className={estilos.title}>
-                <h1>Membros da Code Jr</h1>
+                <h1 className={estilos.titleStyle} >Membros da Code Jr</h1>
             </div>
             <div className={estilos.areaMembers}> 
                 <div className={estilos.container}>

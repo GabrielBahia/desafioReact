@@ -2,11 +2,69 @@
 .tableArea {
     justify-content: center;
     display: flex;
-    margin-top: 5rem;
     margin-bottom: 8rem;
+    box-shadow: 20px 20px 50px grey;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.titleArea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.titleStyle {
+    font-size: x-large;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnArea {
+    display: flex;
+    justify-content: center;
+}
+
+.btnCriar {
+    background-color: #3B1B4D;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    padding: 4px;
+}
+
+.linkCriar {
+    color: white;
+    text-decoration: none;
 }
 
 .table {
-    width: 90%;
-    color:black;
+    width: 70%;
+    color: black;
+    background-color: #FFCE07;
+    border-radius: 10px;
+}
+
+.links {
+    color: white;
+}
+
+.btns {
+    margin-left: 1rem;
+    background-color: #3B1B4D;
+    border-radius: 5px;
+}
+
+.btn2 {
+    margin-left: 1rem;
+    background-color: #BF3923;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 1240px) {
+    .btns {
+        margin-bottom: 0.2rem;
+    }
 }

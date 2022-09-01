@@ -1,6 +1,7 @@
 import estilos from './ViewMembro.module.css';
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { Link as RouterLink } from 'react-router-dom'
 import axios from 'axios';
 
 
@@ -29,28 +30,27 @@ export default function ViewMembro() {
     const [cargo, setCargo] = useState('')
 
     return (
-        <section className={estilos.formArea}>
-            <div className={estilos.container}>
-                    <div>
-                        <label className={estilos.label2} for="name">Nome:</label>
-                        <label className={estilos.label2}>{name}</label>
-                    </div>
-                    <div>
-                        <label className={estilos.label1} for="email">Email:</label>
-                        <label className={estilos.label1}>{email}</label>
-                    </div>
-                    <div>
-                        <label className={estilos.label1} for="aniversario">Aniversario:</label>
-                        <label className={estilos.label1}>{aniversario}</label>
-                    </div>
-                    <div>
-                        <label className={estilos.label1} for="departamentos">Departamentos:</label>
-                        <label className={estilos.label1}>{ departamentos }</label>
-                    </div>
-                    <div>
-                        <label className={estilos.label1} for="cargo">Cargo:</label>
-                        <label className={estilos.label1}>{ cargo }</label>
-                    </div>
+        <section className={estilos.container}>
+            <div className={estilos.formArea}>
+
+                <label className={estilos.label1} for="name">Nome:</label>
+                <label className={estilos.label2}>{name}</label>
+
+                <label className={estilos.label1} for="email">Email:</label>
+                <label className={estilos.label2}>{email}</label>
+
+                <label className={estilos.label1} for="aniversario">Aniversario:</label>
+                <label className={estilos.label2}>{aniversario}</label>
+
+                <label className={estilos.label1} for="departamentos">Departamentos:</label>
+                <label className={estilos.label2}>{ departamentos }</label>
+
+                <label className={estilos.label1} for="cargo">Cargo:</label>
+                <label className={estilos.label2}>{ cargo }</label>    
+                
+                <div>
+                    <button className={estilos.btn1}><RouterLink to={'/adm'}>Voltar</RouterLink></button>
+                </div>
             </div>
         </section>
     );

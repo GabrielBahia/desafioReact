@@ -8,8 +8,12 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
+.titleStyle {
+    font-size: x-large;
+}
 .areaMembers {
     display: flex;
     justify-content: center;
