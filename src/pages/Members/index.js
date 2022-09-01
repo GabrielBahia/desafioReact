@@ -1,6 +1,5 @@
 import estilos from './Members.module.css';
 import Banner from '../../components/Banner';
-import Membros from '../../components/Membros';
 import MembroCard from '../../components/MembroCard';
 import { useEffect, useState } from 'react';
 import axios from 'axios';

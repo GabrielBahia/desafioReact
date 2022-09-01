@@ -1,5 +1,13 @@
 .home {
     margin-bottom: 5rem;
-    background-color: #ececec;
     font-family: 'Varela Round', sans-serif;
 }
+
+.infosArea {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+

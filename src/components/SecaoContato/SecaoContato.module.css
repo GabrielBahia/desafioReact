@@ -27,3 +27,29 @@
     justify-content: space-around;
     width: 20rem;
 }
+
+
+@media (max-width: 500px) {
+    .secaoContatoArea  {
+        justify-content: center;
+        max-width: 14rem;
+        box-shadow: unset;
+    }
+
+    .container {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secaoEndereco {
+        margin-left: 2rem;
+    }
+    
+    .secaoIcons {
+        width: 12rem;
+    }
+    
+    
+}
