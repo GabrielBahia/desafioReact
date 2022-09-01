@@ -14,16 +14,18 @@ export default function NavBar() {
     to: '/login'
   }];
   return (
-    <nav className={estilos.navbar}>
-      <ul >
-        {rotas.map((rota, index) => (
-          <li key={index} >
-            <Link to={rota.to}>
-              {rota.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <div className={estilos.navbarArea}>
+      <nav className={estilos.navbar}>
+        <ul >
+          {rotas.map((rota, index) => (
+            <li key={index} >
+              <Link to={rota.to}>
+                {rota.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 }

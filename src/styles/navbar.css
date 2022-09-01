@@ -1,0 +1,127 @@
+* {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: black;
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    background-color: #3b1b4d;
+    color: black;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  }
+  
+  .brand-name {
+    text-decoration: none;
+    color: #ffce07;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+  
+  .navigation-menu {
+    margin-left: auto;
+  }
+  
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+  }
+  
+  .navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+  
+  .navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+
+  li {
+    width: 100%;
+  }
+  
+  li a {
+    display: block;
+    padding: 20px 5px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #ffce07;
+    color: black;
+  }
+  
+  .active {
+    background-color: #ffce07;
+  }
+  
+  .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #ffce07;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  
+  .hamburger:hover {
+    background-color: #A650DF;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navigation-menu ul {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: calc(60vh - 60px);
+      background-color: #ffce07;
+      border-top: 1px solid black;
+      display: none;
+    }
+  
+    .navigation-menu li {
+      text-align: center;
+      margin: 0;
+    }
+  
+    .navigation-menu li a {
+      color: black;
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+  
+    li a:hover:not(.active) {
+        background-color: #3b1b4d;;
+        color: black;
+      }
+      
+      .active {
+        background-color: #3b1b4d;;
+      }
+  
+    .navigation-menu.expanded ul {
+      display: block;
+    }
+  }
+  

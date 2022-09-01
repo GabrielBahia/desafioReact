@@ -1,5 +1,5 @@
 import Home from './pages/Home';
-import NavBar from './components/NavBar';
+import NavBar2 from './components/NavBar2';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Members from './pages/Members';
@@ -14,7 +14,7 @@ export default function AppRouter() {
     return (
     <main className='container'>
         <Router>
-         {<NavBar />}
+         {<NavBar2 />}
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/membros' element={<Members />} />

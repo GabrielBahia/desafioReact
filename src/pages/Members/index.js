@@ -19,7 +19,7 @@ const Members = () => {
             .catch(erro => {
                 console.log(erro)
             })
-    }, [membros])
+    }, [])
 
 
     return (
