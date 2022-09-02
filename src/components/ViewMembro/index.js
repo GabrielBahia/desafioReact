@@ -21,7 +21,7 @@ export default function ViewMembro() {
                 })
         }
 
-    }, [parametros])
+    }, [])
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')

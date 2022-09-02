@@ -6,6 +6,7 @@ export default function Navbar() {
 
   return (
     <nav className="navigation">
+      <img src="/img/logoCode.png" width={80} alt="Banner" />
       <a href="/" className="brand-name">
         Code Jr.
       </a>

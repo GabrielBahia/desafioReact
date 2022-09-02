@@ -5,7 +5,7 @@ export default function SecaoContato() {
   return (
     <section>
       <div className={estilos.secaoContatoArea}>
-        <div> <h1>Entre em contato </h1> </div>
+        <div> <h1 className={estilos.titleStyle}>Entre em contato </h1> </div>
         <div className={estilos.container}>
           <div class="item">Telefone: </div>
           <div class="item">(31) 98229-3024</div>
